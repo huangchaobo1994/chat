@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport"
+	content="width=device-width,initial-scale=1,user-scalable=0">
+<title>preview</title>
+<link rel="stylesheet" href="css/weui.css">
+<link rel="stylesheet" href="css/preview.css">
+<link rel="stylesheet" href="css/layim.css">
+<link rel="stylesheet" href="css/layui.mobile.css">
+<script type="text/javascript" src="js/jquery-2.1.3.min.js"></script>
+<script type="text/javascript" src="js/mqttws31.js"></script>
+<script type="text/javascript" src="js/layui.js"></script>
+<script type="text/javascript" src="js/dataSource2.js"></script>
+<script type="text/javascript" src="js/connection2.js"></script>
+
+
+<script type="text/javascript"
+	src="https://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>	
+<script src="https://res.wx.qq.com/open/libs/weuijs/1.0.0/weui.min.js"></script>
+
+<script>
+
+</script>
+</head>
+
+
+<body>
+
+
+	<!-- <div class="container" id="container">
+
+		<div class="page__bd" style="height: 100%;">
+		<div class="weui-search-bar" id="searchBar">
+					<form class="weui-search-bar__form">
+						<div class="weui-search-bar__box">
+							<i class="weui-icon-search"></i> <input type="search"
+								class="weui-search-bar__input" id="searchInput" placeholder="搜索"
+								required=""> <a href="javascript:"
+								class="weui-icon-clear" id="searchClear"></a>
+						</div>
+						<label class="weui-search-bar__label" id="searchText"> <i
+							class="weui-icon-search"></i> <span>搜索</span>
+						</label>
+					</form>
+					<a href="javascript:" class="weui-search-bar__cancel-btn"
+						id="searchCancel">取消</a>
+				</div>
+			<div class="page page__index"></div>
+			<div class="page page__preview active">
+				<ul class="layui-unselect layim-tab-content layim-list-friend layui-show"><li><h5 layim-event="spread" lay-type="true"><i class="layui-icon"></i><span>知名人物</span><em>(<cite class="layim-count"> 5</cite>)</em></h5><ul class="layui-layim-list layui-show"><li layim-event="chat" data-type="friend" data-index="0" class="layim-friend100001 "><img src="//tva1.sinaimg.cn/crop.0.0.118.118.180/5db11ff4gw1e77d3nqrv8j203b03cweg.jpg"><span>贤心</span><p>这些都是测试数据，实际使用请严格按照该格式返回</p><span class="layim-msg-status">new</span></li><li layim-event="chat" data-type="friend" data-index="0" class="layim-friend100001222 "><img src="//tva4.sinaimg.cn/crop.0.1.1125.1125.180/475bb144jw8f9nwebnuhkj20v90vbwh9.jpg"><span>刘涛tamia</span><p>如约而至，不负姊妹欢乐颂</p><span class="layim-msg-status">new</span></li><li layim-event="chat" data-type="friend" data-index="0" class="layim-friend10034001 "><img src="//tva2.sinaimg.cn/crop.1.0.747.747.180/633f068fjw8f9h040n951j20ku0kr74t.jpg"><span>谢楠</span><p></p><span class="layim-msg-status">new</span></li><li layim-event="chat" data-type="friend" data-index="0" class="layim-friend168168 "><img src="//tva1.sinaimg.cn/crop.0.0.180.180.180/7fde8b93jw1e8qgp5bmzyj2050050aa8.jpg"><span>马小云</span><p>让天下没有难写的代码</p><span class="layim-msg-status">new</span></li><li layim-event="chat" data-type="friend" data-index="0" class="layim-friend666666 "><img src="//tva1.sinaimg.cn/crop.0.0.512.512.180/6a4acad5jw8eqi6yaholjj20e80e8t9f.jpg"><span>徐小峥</span><p>代码在囧途，也要写到底</p><span class="layim-msg-status">new</span></li></ul></li><li><h5 layim-event="spread" lay-type="false"><i class="layui-icon"></i><span>网红</span><em>(<cite class="layim-count"> 5</cite>)</em></h5><ul class="layui-layim-list"><li layim-event="chat" data-type="friend" data-index="1" class="layim-friend121286 "><img src="//tva4.sinaimg.cn/crop.0.0.640.640.180/4a02849cjw8fc8vn18vktj20hs0hs75v.jpg"><span>罗玉凤</span><p>在自己实力不济的时候，不要去相信什么媒体和记者。他们不是善良的人，有时候候他们的采访对当事人而言就是陷阱</p><span class="layim-msg-status">new</span></li><li layim-event="chat" data-type="friend" data-index="1" class="layim-friend108101 "><img src="//tva1.sinaimg.cn/crop.0.23.1242.1242.180/8693225ajw8fbimjimpjwj20yi0zs77l.jpg"><span>Z_子晴</span><p>微电商达人</p><span class="layim-msg-status">new</span></li><li layim-event="chat" data-type="friend" data-index="1" class="layim-friend12123454 "><img src="//tva2.sinaimg.cn/crop.0.0.512.512.180/005LMAegjw8f2bp9qg4mrj30e80e8dg5.jpg"><span>大鱼_MsYuyu</span><p>我瘋了！這也太準了吧  超級笑點低</p><span class="layim-msg-status">new</span></li><li layim-event="chat" data-type="friend" data-index="1" class="layim-friend102101 "><img src="//tva4.sinaimg.cn/crop.0.0.180.180.180/6d424ea5jw1e8qgp5bmzyj2050050aa8.jpg"><span>Lemon_CC</span><p></p><span class="layim-msg-status">new</span></li><li layim-event="chat" data-type="friend" data-index="1" class="layim-friend3435343 "><img src="//tva2.sinaimg.cn/crop.0.8.751.751.180/961a9be5jw8fczq7q98i7j20kv0lcwfn.jpg"><span>柏雪近在它香</span><p></p><span class="layim-msg-status">new</span></li></ul></li><li><h5 layim-event="spread" lay-type="undefined"><i class="layui-icon"></i><span>我心中的女神</span><em>(<cite class="layim-count"> 2</cite>)</em></h5><ul class="layui-layim-list "><li layim-event="chat" data-type="friend" data-index="2" class="layim-friend76543 "><img src="//tva3.sinaimg.cn/crop.0.0.512.512.180/48f122e6jw8fcmi072lkyj20e80e8t9i.jpg"><span>林心如</span><p>我爱贤心</p><span class="layim-msg-status">new</span></li><li layim-event="chat" data-type="friend" data-index="2" class="layim-friend4803920 "><img src="//tva3.sinaimg.cn/crop.0.0.750.750.180/5033b6dbjw8etqysyifpkj20ku0kuwfw.jpg"><span>佟丽娅</span><p>我也爱贤心吖吖啊</p><span class="layim-msg-status">new</span></li></ul></li></ul>
+			</div>
+			<div class="page page__cart"></div>
+			<div class="page page__home"></div>
+
+
+			<div class="weui-tabbar">
+				<a href="javascript:;" data-page="page__index"
+					class="weui-tabbar__item"> <span
+					style="display: inline-block; position: relative;"> <img
+						src="./images/icon_tabbar.png" alt="" class="weui-tabbar__icon">
+						<span class="weui-badge"
+						style="position: absolute; top: -2px; right: -13px;">8</span>
+				</span>
+					<p class="weui-tabbar__label">消息</p>
+				</a> <a href="javascript:;" data-page="page__preview"
+					class="weui-tabbar__item weui-bar__item_on"> <img
+					src="./images/icon_tabbar.png" alt="" class="weui-tabbar__icon">
+					<p class="weui-tabbar__label ">联系人</p>
+				</a> <a href="javascript:;" data-page="page__cart"
+					class="weui-tabbar__item "> <span
+					style="display: inline-block; position: relative;"> <img
+						src="./images/icon_tabbar.png" alt="" class="weui-tabbar__icon">
+						<span class="weui-badge weui-badge_dot"
+						style="position: absolute; top: 0; right: -6px;"></span>
+				</span>
+					<p class="weui-tabbar__label">动态</p>
+				</a> 
+			</div>
+		</div>
+
+	</div>
+
+	<script type="text/javascript" class="searchbar js_show">
+    $(function(){
+        var $searchBar = $('#searchBar'),
+            $searchResult = $('#searchResult'),
+            $searchText = $('#searchText'),
+            $searchInput = $('#searchInput'),
+            $searchClear = $('#searchClear'),
+            $searchCancel = $('#searchCancel');
+
+        function hideSearchResult(){
+            $searchResult.hide();
+            $searchInput.val('');
+        }
+        function cancelSearch(){
+            hideSearchResult();
+            $searchBar.removeClass('weui-search-bar_focusing');
+            $searchText.show();
+        }
+
+        $searchText.on('click', function(){
+            $searchBar.addClass('weui-search-bar_focusing');
+            $searchInput.focus();
+        });
+        $searchInput
+            .on('blur', function () {
+                if(!this.value.length) cancelSearch();
+            })
+            .on('input', function(){
+                if(this.value.length) {
+                    $searchResult.show();
+                } else {
+                    $searchResult.hide();
+                }
+            })	
+        ;
+        $searchClear.on('click', function(){
+            hideSearchResult();
+            $searchInput.focus();
+        });
+        $searchCancel.on('click', function(){
+            cancelSearch();
+            $searchInput.blur();
+        });
+    });</script>
+	<script type="text/javascript" class="tabbar js_show">
+    $(function(){
+        $('.weui-tabbar__item').on('click', function () {
+            $(this).addClass('weui-bar__item_on').siblings('.weui-bar__item_on').removeClass('weui-bar__item_on');
+            var pageindex=$(this).attr("data-page");
+            
+            $("."+pageindex).show().siblings('.page').hide();
+        });
+    });</script> -->
+    
+    <script type="text/javascript">
+    
+    
+    </script>
+
+</body>
+</html>

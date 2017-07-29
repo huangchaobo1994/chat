@@ -1,0 +1,24 @@
+@charset "UTF-8";
+
+html,body{
+	height:100%;
+	width: 100%;
+}
+	
+.weui-tab {
+    position: static;
+    height: 100%;
+}
+
+.container,.page {
+    height: 100%;
+}
+
+
+.page{
+	display: none;
+}
+
+.active{
+	display: block;
+}
